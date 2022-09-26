@@ -1,0 +1,828 @@
+{
+    "data" :[{
+    "id": 1,
+    "name": "abc",
+     "mappedRule":[
+        {
+        "rule":"length",
+        "status": "passed"
+    },{
+        "rule" : "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule":"min",
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+   {
+    "rule": "size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+  ]
+},
+{
+    "id": 2,
+    "name": "def",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 3,
+    "name": "qaun",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+]
+},
+{
+    "id": 3,
+    "name": "eru",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 4,
+    "name": "def",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 5,
+    "name": "nhj",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+]
+},
+{
+    "id": 6,
+    "name": "the",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 7,
+    "name": "yyu",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 8,
+    "name": "the",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 9,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 10,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},{
+    "id": 11,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},{
+    "id": 12,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 1,
+    "name": "abc",
+     "mappedRule":[
+        {
+        "rule":"length",
+        "status": "passed"
+    },{
+        "rule" : "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule":"min",
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+   {
+    "rule": "size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+  ]
+},
+{
+    "id": 2,
+    "name": "def",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 3,
+    "name": "qaun",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+]
+},
+{
+    "id": 3,
+    "name": "eru",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 4,
+    "name": "def",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 5,
+    "name": "nhj",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"failed"
+    }
+]
+},
+{
+    "id": 6,
+    "name": "the",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "passed"
+    },
+    {
+      "rule":  "max",
+       "status" : "failed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"passed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 7,
+    "name": "yyu",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 8,
+    "name": "the",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"failed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"passed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 9,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},
+{
+    "id": 10,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},{
+    "id": 11,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+},{
+    "id": 12,
+    "name": "thsw",
+    "mappedRule":[
+   {
+    "rule": "length",
+        "status": "failed"
+    },
+    {
+      "rule":  "max",
+       "status" : "passed"
+    },
+   
+    {
+        "rule": "min" ,
+        "status":"passed"
+    },
+   
+    {
+        "rule": "distnce" ,
+        "status":"failed"
+    },
+    {
+        "rule":"size",
+      "status":"failed"
+    },
+    {
+        "rule":"infinite",
+        "status":"passed"
+    }
+]
+}]
+}

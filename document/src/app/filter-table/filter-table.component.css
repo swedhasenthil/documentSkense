@@ -1,0 +1,50 @@
+.margin {
+    margin: 6px;
+}
+
+.table-striped>tbody>tr:nth-child(2n+1)>td,
+.table-striped>tbody>tr:nth-child(2n+1)>th {
+    background-color: rgba(128, 128, 128, 0.158);
+}
+
+.table.dataTable.table-striped>tbody>tr.odd>* {
+    box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0);
+}
+
+.border {
+    border: none;
+    background: none;
+}
+
+.display {
+    color: white;
+
+}
+
+.success {
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    margin: 6px;
+    padding: 3px;
+}
+
+.text {
+    text-transform: capitalize;
+}
+
+.danger {
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    margin: 6px;
+    padding: 3px;
+}
+
+.boderdanger {
+    border: 1px solid red;
+    color: red;
+    border-radius: 7px;
+    margin: 6px;
+    padding: 3px;
+}

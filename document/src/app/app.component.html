@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark" style="cursor:pointer;">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/document">Document</a>
+        <a class="nav-item nav-link"  routerLink="/status" >Rules</a>
+  <a class="nav-item nav-link"  routerLink="/filterTable" >Filter Table</a>
+  <a class="nav-item nav-link"  routerLink="/userMangement" >User Management</a>
+  <a class="nav-item nav-link"  routerLink="/signin">Login</a>
+
+
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+         <div *ngIf="currentUser.role === 'admin'">
+            <a  class="nav-item nav-link" routerLink="/admin">Admin</a>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+      
+                <router-outlet></router-outlet>
+         
+</div>

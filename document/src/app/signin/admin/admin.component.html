@@ -1,0 +1,16 @@
+
+
+
+<div>
+    <h3  style="text-align: center;">HI {{currentUser.firstName}}!</h3>
+
+<div >
+    <h4 style="text-align: center;">Admin access</h4>
+<ul>
+    <li *ngFor="let user of users" style="margin-bottom: 20px;">
+        {{user.username}} ({{user.firstName}} {{user.email}}) -
+        <i class="bi bi-trash" (click)="deleteUser(user.id)" style="font-size:20px;color:red" style="cursor: pointer;"></i>
+
+    </li>
+</ul>
+</div>

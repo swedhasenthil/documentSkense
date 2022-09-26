@@ -1,0 +1,26 @@
+.margin {
+    margin: 6px;
+}
+
+.chipRed {
+    display: inline-block;
+    margin: 10px;
+    padding: 0 40px;
+    height: 37px;
+    font-size: 11px;
+    line-height: 38px;
+    border-radius: 25px;
+    border: 1px solid red;
+    color: red
+}
+.chipGreen {
+    display: inline-block;
+    margin: 10px;
+    padding: 0 40px;
+    height: 37px;
+    font-size: 11px;
+    line-height: 38px;
+    border-radius: 25px;
+    border: 1px solid green;
+    color: green;
+}

@@ -1,0 +1,55 @@
+{
+  "user": [
+    {
+      "id": 2,
+      "firstName": "senthil",
+      "lastName": "s",
+      "userName": "sen",
+      "email": "senthilmk@gmail.com",
+      "mobileNo": "9786549693",
+      "password": "senthil",
+      "confirmPassword": "senthil",
+      "address": {
+        "streetName": "gandhini nagar",
+        "pincode": "606207",
+        "city": "chenni"
+      },
+      "userType": "inactive",
+      "userStatus": "super admin"
+    },
+    {
+      "firstName": "senthil12",
+      "lastName": "s",
+      "userName": "sen",
+      "email": "senthilmk@gmail.com",
+      "moblieNo": "9786549693",
+      "password": "senthil",
+      "confirmPassword": "senthil",
+      "address": {
+        "streetName": "gandhini nagar",
+        "pincode": "606207",
+        "city": "chenni"
+      },
+      "userType": "inactive",
+      "userStatus": "super admin",
+      "id": 3
+    },
+    {
+      "firstName": "swedha",
+      "lastName": "swedha",
+      "userName": "swedha12",
+      "email": "Swedha.km@eveniontechnologies.com",
+      "mobileNo": "9080446869",
+      "password": "swedha",
+      "confirmPassword": "swedha",
+      "userType": "admin",
+      "userStatus": "inactive",
+      "contacts": {
+        "streetName": "tnagar",
+        "city": "salem",
+        "pincode": "636141"
+      },
+      "id": 7
+    }
+  ]
+}

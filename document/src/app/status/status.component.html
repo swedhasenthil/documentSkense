@@ -1,0 +1,23 @@
+
+<div class="text">
+ 
+    <div class="table-responsive margin">
+      <table datatable [dtOptions]="dtOptions" class="table table-striped table-bordered table-hover" style="width:100%">
+        <thead>
+          <tr>
+            <th>column name</th>
+            <th>rules</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of datas">
+            <td>{{data.name}}</td>
+            <td>
+              <span *ngFor="let chiplist of data.mappedRule" [ngClass]="{'chipGreen': chiplist.status === 'passed' , 'chipRed': chiplist.status === 'failed'}">
+                {{chiplist.rule}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

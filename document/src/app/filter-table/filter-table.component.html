@@ -1,0 +1,63 @@
+
+<div class="text">
+    <nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: rgba(128, 128, 128, 0.158);">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="margin-right: 36px;">
+            <h4>Filter by Project</h4>
+            <select class="form-select form-select-sm border" [(ngModel)]="selectedDemo" (change)="onChangeDemo()">
+              <option value="Demo" default>Demo Project</option>
+              <option value="live" default>Other</option>
+              <!-- <option *ngFor="let option of filterOption" [value]="option">{{option}}</option> -->
+            </select>
+          </li>
+          <li class="nav-item" style="margin-right: 36px;">
+            <h4>Filter by assignment</h4>
+            <select class="form-select form-select-sm border" [(ngModel)]="selectedAssign" (change)="onChangeAssign()">
+              <option value="teams" default>teams</option>
+              <option value="others">others</option>
+  
+            </select>
+          </li>
+          <li class="nav-item" style="margin-right: 36px;">
+            <h4>Filter by status</h4>
+            <select class="form-select form-select-sm border" [(ngModel)]="selectedDevice" (change)="onChange()">
+              <option value="all">All</option>
+              <option *ngFor="let option of filterOption" [value]="option">{{option}}</option>
+            </select>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="table-responsive margin">
+      <table datatable [dtOptions]="dtOptions" class="table table-striped table-bordered table-hover" style="width:100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>DocumentName</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Create On</th>
+            <th>Assigned On</th>
+            <th>Last Update On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of students">
+            <td>{{ student.id }} <span
+                [ngClass]="{'danger': student.status === 'in progress' , 'boderdanger': student.status === 'Queue' ,'success': student.status === 'complete' }"
+                class="display">{{student.status}}</span></td>
+            <td>{{ student.docName }}</td>
+            <td>{{ student.Name }}</td>
+            <td>{{ student.Type }}</td>
+            <td>{{ student.creatOn }}</td>
+            <td>{{ student.assignOn }}</td>
+            <td>{{ student.lastOn }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

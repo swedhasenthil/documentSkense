@@ -1,0 +1,280 @@
+
+
+<div >
+    <div *ngIf="formdiv" class="container">
+    <legend>User form</legend>
+    <div class="alert alert-danger" role="alert" *ngIf="alterWarningUser">
+        user name already exist
+       </div>
+       <div class="alert alert-danger" role="alert" *ngIf="alterWarningEmail">
+        email already exist
+       </div>
+    <form [formGroup]="jobForm" (ngSubmit)="save(jobForm)">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div>
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name"/>
+                        <div *ngIf="f['firstName'].touched && f['firstName'].invalid" class="text-danger">
+                            <div *ngIf="f['firstName'].errors && f['firstName'].errors['required']"> First Name is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Last Name"/>
+                        <div *ngIf="f['lastName'].touched && f['lastName'].invalid" class="text-danger">
+                            <div *ngIf="f['lastName'].errors && f['lastName'].errors['required']">lastName is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="lastName" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="userName" formControlName="userName" placeholder="user Name"/>
+                        <div *ngIf="f['userName'].touched && f['userName'].invalid" class="text-danger">
+                            <div *ngIf="f['userName'].errors && f['userName'].errors['required']">usser Name is required.
+                            </div>
+                            <div *ngIf="f['userName'].errors && f['userName'].errors['minlength']">user Name should be 4
+                                character.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="Email" formControlName="email" placeholder="Email"/>
+                        <div *ngIf="f['email'].touched && f['email'].invalid" class="text-danger">
+                            <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required.</div>
+                            <div *ngIf="f['email'].errors && f['email'].errors['minlength']">invaild email
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="mobileNo" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" id="mobileNo" formControlName="mobileNo" placeholder="Mobile Nuber"/>
+                        <div *ngIf="f['mobileNo'].touched && f['mobileNo'].invalid" class="text-danger">
+                            <div *ngIf="f['mobileNo'].errors && f['mobileNo'].errors['required']">mobile number is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" formControlName="password" placeholder="password"/>
+                        <div *ngIf="f['password'].touched && f['password'].invalid" class="text-danger">
+                            <div *ngIf="f['password'].errors && f['password'].errors['required']">password is required.
+                            </div>
+                            <div *ngIf="f['password'].errors && f['password'].errors['minlength']">password should be 4
+                                character.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="text" class="form-control" id="confirmPassword"
+                            formControlName="confirmPassword" placeholder="confirm Password"/>
+                        <div *ngIf="f['confirmPassword'].touched && f['confirmPassword'].invalid" class="text-danger">
+                            <div *ngIf="f['confirmPassword'].errors && f['confirmPassword'].errors['required']">confirmPassword is
+                                required.</div>
+                                <div *ngIf="f['confirmPassword'].errors?.['confirmedValidator']">Password and Confirm Password must be match.</div>
+
+
+                            <!-- <div *ngIf="f['confirmPassword'].errors.['ConfirmPasswordValidator']">
+                                    Passsword and Confirm Password didn't match.
+                                  </div>                            -->
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label">User Type
+                        </label>
+                        <select class="form-select" formControlName="userType" placeholder=" select userType">
+                            <option value="superadmin">Super Admin</option>
+                            <option value="admin">Admin</option>
+                            <option value="user">User</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form-label">User Status
+                        </label>
+                        <select class="form-select" formControlName="userStatus" aria-placeholder="select userStatus">
+                            <option value="active">Active</option>
+                            <option value="inactive">InActive</option>
+                        </select>
+                    </div>
+                    <div formGroupName="contacts">
+
+                        <div class="row">
+                            <div>
+                                <div>
+                                    <label for="streetName" class="form-label">Street Name</label>
+                                    <input type="streetName" class="form-control" id="streetName" placeholder="streetName"
+                                        formControlName="streetName" />
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="city" formControlName="city" placeholder="city"/>
+                                 
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <label for="pincode" class="form-label">pincode</label>
+                                    <input type="text" class="form-control" id="pincode" formControlName="pincode" placeholder="pincode"/>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div *ngIf="tableView">
+    <button type="submit" class="btn btn-primary" (click)="newUser()" style="float: right;    margin-top: 20px;
+    margin-bottom: 36px;">Add New User</button>
+    <table datatable [dtOptions]="dtOptions" class="row-border hover" style="width:100%" *ngIf="userDatas.length">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>lastName</th>
+                <th>userName</th>
+                <th>Email</th>
+                <th>User Type</th>
+                <th>User Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of userDatas">
+                <td>{{data.firstName}}</td>
+                <td>{{data.lastName}}</td>
+                <td>{{data.userName}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.userType}}</td>
+                <td>{{data.userStatus}}</td>
+                <td>
+
+                    <span (click)="triggerModal(modalData,data.id)" style="color:green" class="bi bi-pencil"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="bi bi-trash" style="color:red" (click)="delete(data.id)"></span>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<ng-template #modalData let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title" style="font-size: 19px;">Manage Attribute</h4>
+  
+    </div>
+    <div class="modal-body">
+        <form >
+            <div class="col-md-12">
+                <div class="row">
+    
+                    <div class="col-md-6">
+                        <div>
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" [(ngModel)]="indiviUser.firstName" [ngModelOptions]="{standalone: true}"/>
+                       
+                        </div>
+                        <div>
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName"  [(ngModel)]="indiviUser.lastName" [ngModelOptions]="{standalone: true}"/>
+                          
+                        </div>
+                        <div>
+                            <label for="lastName" class="form-label">User Name</label>
+                            <input type="text" class="form-control" id="userName"  [(ngModel)]="indiviUser.userName" [ngModelOptions]="{standalone: true}"/>
+                        
+                        </div>
+                        <div>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="Email" [(ngModel)]="indiviUser.email" [ngModelOptions]="{standalone: true}"/>
+                         
+                        </div>
+                        <div>
+                            <label for="mobileNo" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobileNo"  [(ngModel)]="indiviUser.mobileNo" [ngModelOptions]="{standalone: true}"/>
+                           
+                        </div>
+                        <div>
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" class="form-control" id="password"  [(ngModel)]="indiviUser.password" [ngModelOptions]="{standalone: true}"/>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="text" class="form-control" id="confirmPassword" [ngModelOptions]="{standalone: true}"
+                            [(ngModel)]="indiviUser.confirmPassword"/>
+                         
+                        </div>
+                        <div>
+                            <label class="form-label">User Type
+                            </label>
+                            <select class="form-select"  aria-label="Default select example"  [(ngModel)]="indiviUser.userType" [ngModelOptions]="{standalone: true}">
+                                <option value="superadmin">Super Admin</option>
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+    
+                            </select>
+                        </div>
+                        <div>
+                            <label class="form-label">User Status
+                            </label>
+                            <select class="form-select"  [(ngModel)]="indiviUser.userStatus" [ngModelOptions]="{standalone: true}" aria-label="Default select example">
+                                <option value="active">Active</option>
+                                <option value="inactive">InActive</option>
+                            </select>
+                        </div>
+                        <div >
+    
+                            <div class="row">
+                                <div>
+                                    <div>
+                                        <label for="streetName" class="form-label">Street Name</label>
+                                        <input type="streetName" class="form-control" id="streetName"
+                                        [(ngModel)]="indiviUser.address.streetName" [ngModelOptions]="{standalone: true}"/>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="city" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="city"  [(ngModel)]="indiviUser.address.city" [ngModelOptions]="{standalone: true}" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <label for="pincode" class="form-label">pincode</label>
+                                        <input type="text" class="form-control" id="pincode"  [(ngModel)]="indiviUser.address.pincode"  [ngModelOptions]="{standalone: true}"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+         
+        </form>
+    </div>
+    <div class="modal-footer">
+        <div style="margin-top: 20px;">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" (click)="update()">Submit</button>
+            </div>
+        </div>
+    </div>
+  </ng-template>
