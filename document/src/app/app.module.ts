@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     DataTablesModule,
     NgbModule,
-    HttpClientModule     
+    HttpClientModule,
 
   ],
   providers: [AuthenticationService ],

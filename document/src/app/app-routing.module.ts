@@ -6,7 +6,9 @@ const routes: Routes = [
 { path: 'status', loadChildren: () => import('./status/status.module').then(m => m.StatusModule) },
  { path: 'filterTable', loadChildren: () => import('./filter-table/filter-table.module').then(m => m.FilterTableModule) },
   { path: 'signin', loadChildren: () => import('./signin/signin.module').then(m => m.SigninModule) },
-  { path: 'userManagement', loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule) }];
+  { path: 'userManagement', loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule) },
+  { path: 'dropdownlist', loadChildren: () => import('./dropdownlist/dropdownlist.module').then(m => m.DropdownlistModule) },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

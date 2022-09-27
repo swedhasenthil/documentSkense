@@ -21,24 +21,10 @@ export class AppComponent {
     public router: Router,
     public authenticationService: AuthenticationService
 ){
-  this.admindiv = true;
-        this.authenticationService.currentUser.subscribe(x => 
-          console.log(x));
-
-     this.user = this.currentUser.role
-     console.log(this.user)
-     if(this.user == 'admin')
-     {
-       this.admindiv = true;
-       console.log("data")
-     }
-     else(this.user === "user")
-     {
-      this.admindiv = false;
-     }
+  
 }
 ngOnInit(){
-  this.router.navigate(['document']);
+  this.router.navigate(['dropdownlist']);
 
 }
 

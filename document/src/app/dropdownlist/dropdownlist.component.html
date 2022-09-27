@@ -1,0 +1,42 @@
+<div class="col-md-12 container" style="margin-top: 36px;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Country Name List</h5>
+                    <select class="custom-select" (change)="onChangeCountry($event)">
+                        <option selected>Please select country</option>
+                        <option [value]="name.CountryName" *ngFor="let name of countryList">{{name.CountryName}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">State Name List</h5>
+
+                <select class="custom-select" (change)="onChangeState($event)">
+                    <option selected>Please select State</option>
+                    <option [value]="state.StateName" *ngFor="let state of stateList">{{state.StateName}}</option>
+                </select>
+            </div>
+</div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+
+            <div class="card-body">
+                <h5 class="card-title">city List</h5>
+
+                <select class="custom-select" *ngIf="citiesList">
+                    <option *ngFor="let city of citiesList">{{city}}</option>
+                </select>
+            </div>
+</div>
+        </div>
+
+    </div>
+</div>
