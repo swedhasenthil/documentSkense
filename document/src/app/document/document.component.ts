@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as Data from '../data.json';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../signin/service/authentication.service';
 
 @Component({
   selector: 'app-document',
@@ -20,9 +22,12 @@ export class DocumentComponent implements OnInit {
   displayStyle: any = "none";
   closeModal: any;
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,
+    public router: Router,
+    public authenticationService: AuthenticationService) { }
 
   ngOnInit(): void {
+ 
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 5,
@@ -66,4 +71,5 @@ export class DocumentComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
+  
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CountryService } from './country.services';
 import {map} from 'rxjs/operators';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../signin/service/authentication.service';
 
 @Component({
   selector: 'app-dropdownlist',
@@ -17,10 +19,13 @@ export class DropdownlistComponent implements OnInit {
   citiesList: any;
 
   constructor(
-    public countryService : CountryService
+    public countryService : CountryService,
+    public router: Router,
+    public authenticationService: AuthenticationService
   ) { }
 
   ngOnInit(): void {
+  
     this.countryService.getCountryName().subscribe(data=>{
       this.countryList = data;
       console.log("country name", data);
@@ -40,6 +45,9 @@ export class DropdownlistComponent implements OnInit {
            this.citiesList = state.Cities;
       console.log("satelist",this.citiesList)
          }
-
+         logout() {
+          this.authenticationService.logout();
+          this.router.navigate(['/signin']);
+      }
 
 }

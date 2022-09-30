@@ -35,6 +35,7 @@ export class SigninComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
@@ -78,6 +79,10 @@ export class SigninComponent implements OnInit {
               this.warningMsg = error
                 this.loading = false;
             });
+}
+logout() {
+  this.authenticationService.logout();
+  this.router.navigate(['/signin']);
 }
 
 }

@@ -1,0 +1,56 @@
+
+
+<table datatable [dtOptions]="dtOptions" class="table table-striped table-hover" style="width:100%" *ngIf="tableLists.length">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Phone No</th>
+      <th>Country</th>
+      <th>State</th>
+      <th>City</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let lists of tableLists;let i = index">
+      <td  >{{lists.firstName}}</td>
+      <td >{{lists.lastName}}</td>
+      <td>{{lists.email}}</td>
+      <td>{{lists.phoneNumber}}</td>
+      <td >
+        <ng-container  *ngFor="let list of lists.Countries">
+     
+        <select  class="custom-select" (change)="onChangeCountry(list.CountryName,i)" [(ngModel)]="list.CountryName" [ngModelOptions]="{standalone: true}">
+          <option selected default>Please select country</option>
+          <option [value]="name.CountryName" *ngFor="let name of countryList">{{name.CountryName}}
+          </option>
+        </select>  </ng-container></td>
+    
+      <td>
+        <ng-container  *ngFor="let list of lists.Countries">
+          <select class="custom-select" placeholder="Please select State" (change)="onChangeState(list.StateName,i)" [(ngModel)]="list.StateName" [ngModelOptions]="{standalone: true}">
+          <option selected default>Please select State</option>
+          <option [value]="state.StateName" *ngFor="let state of states[i]">{{state.StateName}}</option>
+        </select>
+      </ng-container></td>
+      <td> 
+        <ng-container *ngFor="let list of lists.Countries">
+          <select class="custom-select" placeholder="Please select Cities" [(ngModel)]="list.Cities" [ngModelOptions]="{standalone: true}">
+        <option selected default>Please select Cities</option>
+          <option [value]="Cities" *ngFor="let Cities of cities[i]">{{Cities}}</option>
+        </select>
+        </ng-container>
+      </td>
+      <td> 
+        <button type="button" class="btn btn-success" (click)="onSubmit(lists.id,lists)">Edit</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="float: right;">
+<button (click)="saveTable()" type="button" class="btn btn-primary">Save All</button>
+<button type="button" class="btn btn-danger" (click)="ngOnInit()">Cancel</button>
+
+</div>

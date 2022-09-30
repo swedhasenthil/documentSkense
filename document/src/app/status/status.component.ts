@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../signin/service/authentication.service';
 import  data from './data.json';
 
 @Component({
@@ -11,10 +13,15 @@ export class StatusComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
   datas: any;
 
-  constructor() {
+  constructor( public router: Router,
+    public authenticationService: AuthenticationService) {
     this.datas = data.data
   }
   ngOnInit() {
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10,
@@ -24,6 +31,9 @@ export class StatusComponent implements OnInit {
   
   }
 
- 
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/signin']);
+}
 
 }

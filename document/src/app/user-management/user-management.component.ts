@@ -4,8 +4,10 @@ import { Observable } from 'rxjs';
 import { FormControl, FormGroup, FormBuilder, Validators, AbstractControl } from '@angular/forms';
 import { UserService } from './user.service';
 import { ConfirmedValidator } from './confirmed.validator';
+import { AuthenticationService } from '../signin/service/authentication.service';
 
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 export class User {
   id: any;
@@ -54,7 +56,9 @@ export class UserManagementComponent implements OnInit {
   constructor(private http: HttpClient,
     public fb: FormBuilder,
     public userService: UserService,
-    private modalService: NgbModal) 
+    private modalService: NgbModal,
+    public router: Router,
+    public authenticationService: AuthenticationService) 
     {
     this.jobForm = this.fb.group({
       firstName: ['', [Validators.required]],
@@ -177,6 +181,10 @@ export class UserManagementComponent implements OnInit {
       this.ngOnInit();
     })
   }
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/signin']);
+}
 }
 
 

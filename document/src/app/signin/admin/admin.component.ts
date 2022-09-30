@@ -30,6 +30,7 @@ export class AdminComponent implements OnInit {
   }
 
   ngOnInit() {
+ 
       this.loadAllUsers();
   }
 

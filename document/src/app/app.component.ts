@@ -15,19 +15,27 @@ export class AppComponent {
   user: any;
   admindiv: any;
   title: any;
+  isShow: any;
  
   constructor
   (
     public router: Router,
     public authenticationService: AuthenticationService
 ){
-  
+  this.isShow = true;
 }
 ngOnInit(){
-  this.router.navigate(['dropdownlist']);
+  //Toggle Click Function
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+  // this.router.navigate(['dr']);
 
 }
-
+toggleDisplay() {
+  this.isShow = !this.isShow;
+}
 
     logout() {
         this.authenticationService.logout();

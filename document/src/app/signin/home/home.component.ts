@@ -25,6 +25,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
+   
         this.loadAllUsers();
     }
 
@@ -44,5 +45,9 @@ export class HomeComponent implements OnInit, OnDestroy {
             this.users = users;
             // console.log(this.users);
         });
+    }
+    logout() {
+        this.authenticationService.logout();
+        this.router.navigate(['/signin']);
     }
 }

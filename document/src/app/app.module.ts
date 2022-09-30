@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import{AuthenticationService }from './signin/service/authentication.service'
 import { HttpClientModule } from '@angular/common/http';
-
+import { SigninModule } from './signin/signin.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     DataTablesModule,
     NgbModule,
     HttpClientModule,
-
+    SigninModule
   ],
   providers: [AuthenticationService ],
   bootstrap: [AppComponent]

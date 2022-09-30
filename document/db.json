@@ -344,149 +344,149 @@
             "YSR Kadapa"
           ]
         },
-        {  
-          "StateName":"Assam",
-          "Cities":[  
-              "Baksa",
-              "Barpeta",
-              "Biswanath",
-              "Bongaigaon",
-              "Cachar",
-              "Charaideo",
-              "Chirang",
-              "Darrang",
-              "Dhemaji",
-              "Dhubri",
-              "Dibrugarh",
-              "Goalpara",
-              "Golaghat",
-              "Hailakandi",
-              "Hojai",
-              "Jorhat",
-              "Kamrup Metropolitan",
-              "Kamrup",
-              "Karbi Anglong",
-              "Karimganj",
-              "Kokrajhar",
-              "Lakhimpur",
-              "Majuli",
-              "Morigaon",
-              "Nagaon",
-              "Nalbari",
-              "Dima Hasao",
-              "Sivasagar",
-              "Sonitpur",
-              "South Salmara-Mankachar",
-              "Tinsukia",
-              "Udalguri",
-              "West Karbi Anglong"
+        {
+          "StateName": "Assam",
+          "Cities": [
+            "Baksa",
+            "Barpeta",
+            "Biswanath",
+            "Bongaigaon",
+            "Cachar",
+            "Charaideo",
+            "Chirang",
+            "Darrang",
+            "Dhemaji",
+            "Dhubri",
+            "Dibrugarh",
+            "Goalpara",
+            "Golaghat",
+            "Hailakandi",
+            "Hojai",
+            "Jorhat",
+            "Kamrup Metropolitan",
+            "Kamrup",
+            "Karbi Anglong",
+            "Karimganj",
+            "Kokrajhar",
+            "Lakhimpur",
+            "Majuli",
+            "Morigaon",
+            "Nagaon",
+            "Nalbari",
+            "Dima Hasao",
+            "Sivasagar",
+            "Sonitpur",
+            "South Salmara-Mankachar",
+            "Tinsukia",
+            "Udalguri",
+            "West Karbi Anglong"
           ]
         },
-        {  
-          "StateName":"Chandigarh (UT)",
-          "Cities":[  
-              "Chandigarh"
+        {
+          "StateName": "Chandigarh (UT)",
+          "Cities": [
+            "Chandigarh"
           ]
         },
-        {  
-            "StateName":"Dadra and Nagar Haveli (UT)",
-            "Cities":[  
-                "Dadra & Nagar Haveli"
-            ]
-          },
-          {  
-            "StateName":"Daman and Diu (UT)",
-            "Cities":[  
-                "Daman",
-                "Diu"
-            ]
-          },
-          {  
-            "StateName":"Delhi (NCT)",
-            "Cities":[  
-                "Central Delhi",
-                "East Delhi",
-                "New Delhi",
-                "North Delhi",
-                "North East  Delhi",
-                "North West  Delhi",
-                "Shahdara",
-                "South Delhi",
-                "South East Delhi",
-                "South West  Delhi",
-                "West Delhi"
-            ]
-          },
-          {  
-            "StateName":"Goa",
-            "Cities":[  
-                "North Goa",
-                "South Goa"
-            ]
-          },
-          {  
-            "StateName":"Nagaland",
-            "Cities":[  
-                "Dimapur",
-                "Kiphire",
-                "Kohima",
-                "Longleng",
-                "Mokokchung",
-                "Mon",
-                "Peren",
-                "Phek",
-                "Tuensang",
-                "Wokha",
-                "Zunheboto"
-            ]
-          },
-          {  
-            "StateName":"Odisha",
-            "Cities":[
-                "Angul",
-                "Balangir",
-                "Balasore",
-                "Bargarh",
-                "Bhadrak",
-                "Boudh",
-                "Cuttack",
-                "Deogarh",
-                "Dhenkanal",
-                "Gajapati",
-                "Ganjam",
-                "Jagatsinghapur",
-                "Jajpur",
-                "Jharsuguda",
-                "Kalahandi",
-                "Kandhamal",
-                "Kendrapara",
-                "Kendujhar (Keonjhar)",
-                "Khordha",
-                "Koraput",
-                "Malkangiri",
-                "Mayurbhanj",
-                "Nabarangpur",
-                "Nayagarh",
-                "Nuapada",
-                "Puri",
-                "Rayagada",
-                "Sambalpur",
-                "Sonepur",
-                "Sundargarh"
-            ]
-          },
-          {  
-            "StateName":"Puducherry (UT)",
-            "Cities":[  
-                "Karaikal",
-                "Mahe",
-                "Pondicherry",
-                "Yanam"
-            ]
-          }
+        {
+          "StateName": "Dadra and Nagar Haveli (UT)",
+          "Cities": [
+            "Dadra & Nagar Haveli"
+          ]
+        },
+        {
+          "StateName": "Daman and Diu (UT)",
+          "Cities": [
+            "Daman",
+            "Diu"
+          ]
+        },
+        {
+          "StateName": "Delhi (NCT)",
+          "Cities": [
+            "Central Delhi",
+            "East Delhi",
+            "New Delhi",
+            "North Delhi",
+            "North East  Delhi",
+            "North West  Delhi",
+            "Shahdara",
+            "South Delhi",
+            "South East Delhi",
+            "South West  Delhi",
+            "West Delhi"
+          ]
+        },
+        {
+          "StateName": "Goa",
+          "Cities": [
+            "North Goa",
+            "South Goa"
+          ]
+        },
+        {
+          "StateName": "Nagaland",
+          "Cities": [
+            "Dimapur",
+            "Kiphire",
+            "Kohima",
+            "Longleng",
+            "Mokokchung",
+            "Mon",
+            "Peren",
+            "Phek",
+            "Tuensang",
+            "Wokha",
+            "Zunheboto"
+          ]
+        },
+        {
+          "StateName": "Odisha",
+          "Cities": [
+            "Angul",
+            "Balangir",
+            "Balasore",
+            "Bargarh",
+            "Bhadrak",
+            "Boudh",
+            "Cuttack",
+            "Deogarh",
+            "Dhenkanal",
+            "Gajapati",
+            "Ganjam",
+            "Jagatsinghapur",
+            "Jajpur",
+            "Jharsuguda",
+            "Kalahandi",
+            "Kandhamal",
+            "Kendrapara",
+            "Kendujhar (Keonjhar)",
+            "Khordha",
+            "Koraput",
+            "Malkangiri",
+            "Mayurbhanj",
+            "Nabarangpur",
+            "Nayagarh",
+            "Nuapada",
+            "Puri",
+            "Rayagada",
+            "Sambalpur",
+            "Sonepur",
+            "Sundargarh"
+          ]
+        },
+        {
+          "StateName": "Puducherry (UT)",
+          "Cities": [
+            "Karaikal",
+            "Mahe",
+            "Pondicherry",
+            "Yanam"
+          ]
+        }
       ]
     },
-{
+    {
       "CountryName": "Japan",
       "States": [
         {
@@ -511,6 +511,64 @@
             "Kanekomachi",
             "Kiryū"
           ]
+        }
+      ]
+    }
+  ],
+  "tableDropdown": [
+    {
+      "firstName": "swedha",
+      "lastName": "KM",
+      "email": "swedhaas@gmail.com",
+      "phoneNumber": 9080446869,
+      "Countries": [
+        {
+          "CountryName": "Bolivia",
+          "StateName": "Oruro Department",
+          "Cities": "Litoral de Atacama"
+        }
+      ],
+      "id": "1"
+    },
+    {
+      "firstName": "senthil",
+      "lastName": "MK",
+      "email": "senthilmk@gmail.com",
+      "phoneNumber": "9786549693",
+      "Countries": [
+        {
+          "CountryName": "Australia",
+          "StateName": "Queensland",
+          "Cities": "Mount Lofty"
+        }
+      ],
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "firstName": "sanjay",
+      "lastName": "KM",
+      "email": "sanjaykm@gmail.com",
+      "phoneNumber": "678954320",
+      "Countries": [
+        {
+          "CountryName": "Australia",
+          "StateName": "New South Wales",
+          "Cities": "Ashtonfield"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "firstName": "arun",
+      "lastName": "A",
+      "email": "arunA@gmail.com",
+      "phoneNumber": "7890654321",
+      "Countries": [
+        {
+          "CountryName": "Belarus",
+          "StateName": "Vitebsk Region",
+          "Cities": "Haradok"
         }
       ]
     }

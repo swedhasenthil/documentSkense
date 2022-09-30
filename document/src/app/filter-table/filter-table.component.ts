@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../signin/service/authentication.service';
 import studentsData from './students.json';
 
 @Component({
@@ -18,7 +20,10 @@ export class FilterTableComponent implements OnInit {
   selectedDemo: any;
   selectedAssign: any;
   allItems: any;
-  constructor() {
+  constructor(
+    public router: Router,
+    public authenticationService: AuthenticationService
+  ) {
 
     this.students = studentsData
     this.selectedDemo = "Demo";
@@ -26,6 +31,7 @@ export class FilterTableComponent implements OnInit {
     this.selectedDevice = "all";
   }
   ngOnInit() {
+ 
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10,
@@ -80,4 +86,8 @@ export class FilterTableComponent implements OnInit {
       this.students = stud;
     }
   }
+  logout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/signin']);
+}
 }
