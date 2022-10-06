@@ -572,5 +572,49 @@
         }
       ]
     }
+  ],
+  "fileUpload": [
+    {
+      "name": "document 1.PNG",
+      "size": 86833,
+      "type": "image/png",
+      "id": 1
+    },
+    {
+      "name": "dt.PNG",
+      "size": 34301,
+      "type": "image/png",
+      "id": 2
+    },
+    {
+      "name": "dt.PNG",
+      "size": 34301,
+      "type": "image/png",
+      "id": 3
+    },
+    {
+      "name": "document.PNG",
+      "size": 89234,
+      "type": "image/png",
+      "id": 4
+    },
+    {
+      "name": "document.PNG",
+      "size": 89234,
+      "type": "image/png",
+      "id": 5
+    },
+    {
+      "name": "document 1.PNG",
+      "size": 86833,
+      "type": "image/png",
+      "id": 6
+    },
+    {
+      "name": "document 1.PNG",
+      "size": 86833,
+      "type": "image/png",
+      "id": 7
+    }
   ]
 }

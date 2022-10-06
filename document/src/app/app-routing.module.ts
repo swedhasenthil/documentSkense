@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'userManagement', loadChildren: () => import('./user-management/user-management.module').then(m => m.UserManagementModule) },
   { path: 'dropdownlist', loadChildren: () => import('./dropdownlist/dropdownlist.module').then(m => m.DropdownlistModule) },
   { path: 'dropDownTable', loadChildren: () => import('./drop-down-table/drop-down-table.module').then(m => m.DropDownTableModule) },
+  { path: 'fileUpload', loadChildren: () => import('./file-upload/file-upload.module').then(m => m.FileUploadModule) },
 ];
 
 @NgModule({

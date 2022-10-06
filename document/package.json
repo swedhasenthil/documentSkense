@@ -26,6 +26,7 @@
     "datatables.net-dt": "^1.12.1",
     "jquery": "^3.6.1",
     "json-server": "^0.17.0",
+    "ngx-dropzone": "^3.1.0",
     "popper.js": "^1.16.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

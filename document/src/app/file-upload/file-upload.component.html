@@ -1,0 +1,42 @@
+<!-- --<div class="text-center">
+    <input class="form-control" type="file" 
+            (change)="onChange($event)">
+  
+    <button (click)="onUpload()" 
+        class="btn btn-success">
+        Upload
+    </button>
+</div> -->
+  
+<!-- Shareable short link of  uploaded file -->
+<!-- <div class="container text-center jumbotron"
+    *ngIf="shortLink">
+    <h2> Visit Here</h2>
+    <a href="{{shortLink}}">{{shortLink}}</a>
+</div> -->
+<ngx-dropzone (change)="onChange($event)" class="dropDrag shadow">
+	<ngx-dropzone-label>Drag and Drop
+        <pre>or</pre>
+        <div>Select your browser</div>
+    </ngx-dropzone-label>
+</ngx-dropzone>
+<table datatable [dtOptions]="dtOptions" class="table table-striped table-hover" style="width:100%" >
+    <thead>
+      <tr>
+        <th>User Name</th>
+        <th>Image</th>
+        <th></th>   
+      </tr>
+    </thead>
+    <tbody>
+  <tr *ngFor ="let list of fileLists">
+    <td>{{userName}}</td>
+    <td><img [src]="list.name| lowercase"></td>
+    <td>
+
+    </td>
+    <td></td>
+  </tr>
+    </tbody>
+  </table>
+<!--Flag variable is used here-->

@@ -25,7 +25,9 @@ export class AdminComponent implements OnInit {
   ) {
       this.currentUserSubscription = this.authenticationService.currentUser.subscribe(user => {
           this.currentUser = user;
-          console.log("user",user)
+          console.log("user",user);
+          localStorage.setItem("userName", this.currentUser.username);
+
       });
   }
 
